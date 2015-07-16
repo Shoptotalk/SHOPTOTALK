@@ -1,0 +1,104 @@
+.light-border { border: 1px solid #869791; }
+
+.counter {
+    position: absolute;
+    top: 11px;
+    left: 23px;
+    background-color: #BC1818;
+    font-size: 12px;
+    z-index: 10;
+    min-width: 15px;
+    padding:0px 2px;
+    height: 20px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.counter:hover {
+    color: #ffffff;
+}
+
+.notification-dropdown {
+    width:350px;
+    max-height: 400px;
+    overflow-y: scroll;
+    font-size: 16px;
+}
+
+.notification-line {
+    border-bottom: 1px solid #869791;
+    padding:7px 0px;
+    cursor: pointer;
+}
+
+.notification-line:hover {
+    background: #EBF4FC;
+}
+
+.notification-line:nth-last-child(1) { border-bottom: none; }
+
+.notification-line img {
+    max-height: 60px;
+}
+
+.notification-line.not-seen {
+    background: #EBF4FC;
+}
+
+.notification-line .small {
+    font-size: 70%;
+    color: #aeaeae;
+}
+
+#PostsContainer { position: relative; }
+
+.user_experience {
+    background: #ffffff;
+    border: 1px solid #869791;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
+.autocomplete-suggestion { padding: 5px; font-size: 0.9em; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #f0f0f0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #18bc9c; }
+
+.white-text { color:#ffffff; }
+
+.profile-picture {
+    max-width:50px;
+    max-height:50px;
+    border:1px solid #869791;
+}
+
+.sm-profile-picture {
+    max-width:30px;
+    max-height:30px;
+    border:1px solid #869791;
+}
+
+.lg-profile-picture {
+    max-width:150px;
+    max-height:150px;
+    border:1px solid #869791;
+}
+
+.max-profile-picture {
+    width:100%;
+    border:1px solid #869791;
+}
+
+.user-post-details {
+    background-color: #ECF0F1;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom:10px;
+}
+
+.profile_fixed {
+    max-width: inherit;
+    width: 100%;
+}
+
+.profile_fixed img { width:100%; }

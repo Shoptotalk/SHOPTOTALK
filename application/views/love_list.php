@@ -1,0 +1,1 @@
+<div class="loveListItem"><?= $user->fname ?> <?= $user->lname ?></div>

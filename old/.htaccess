@@ -1,0 +1,26 @@
+Options +FollowSymLinks -indexes
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+
+## If the request is for a valid directory
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+## If the request is for a valid file
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+## If the request is for a valid link
+RewriteCond %{REQUEST_FILENAME} -l
+## don't do anything
+RewriteRule ^ - [L]
+
+
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$ ?page=$1&var1=$2&var2=$3&var3=$4&var4=$5 [L,QSA]
+
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$ ?page=$1&var1=$2&var2=$3&var3=$4 [L,QSA]
+
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/?$ ?page=$1&var1=$2&var2=$3 [L,QSA]
+
+RewriteRule ^([^/]+)/([^/]+)/?$ ?page=$1&var1=$2 [L,QSA]
+
+RewriteRule ^([^/]+)/?$ ?page=$1 [L,QSA]
+
+</IfModule>
