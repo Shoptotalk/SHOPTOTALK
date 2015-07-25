@@ -1,4 +1,0 @@
-var messages = [];
-
-messages['loginForm_error'] = '<div class="form_error"><div class="error mb5">Incorrect Email Or Password</div><div class="fs10 mb10">You can retrive your password <a href="">here</a>.<br />if you think its just a mistake so try again.<br />you can also register on the form below.';
-messages['userExist'] = '<div class="form_error"><div class="error mb5">User Already Exists</div><div class="fs10 mb10">You can retrive your password <a href="">here</a>.<br />if you think its just a mistake so try again.<br />If your private email is register and its not you, please contact us: <a href="mailto:support@buyit2.com">support@buyit2.com</a>';
